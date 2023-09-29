@@ -1,0 +1,82 @@
+﻿
+.continueshopping {
+    position: fixed;
+    border: none;
+    color: black;
+    background-color: deepskyblue;
+    margin-top: 25vh;
+    height: 4vh;
+    border: 2px solid black;
+    border-radius: 5px 5px;
+    width: 22vh;
+    transform: translateX(148vh);
+    font-weight: bold;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.invoice {
+    height: 50vh;
+    width: 80%;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.invoice-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+    .invoice-header h1 {
+        margin: 0;
+        color: #333;
+    }
+
+.user-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+    .user-info div {
+        flex: 1;
+    }
+
+.product-details {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+    .product-details th, .product-details td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    .product-details th {
+        background-color: #f2f2f2;
+    }
+
+.total {
+    text-align: right;
+}
+
+.pricebill {
+    position: relative;
+    margin-left: 85vh;
+}
+
+
+.continueshopping:hover {
+    background-color: blue;
+    color: white;
+}

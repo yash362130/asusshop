@@ -1,0 +1,201 @@
+﻿  .container {
+    display: flex;
+    border: 2px solid black;
+    border-radius: 15px 50px;
+    height: 20vh;
+}
+
+.asus-add {
+    display: flex;
+    overflow: hidden;
+}
+
+    .asus-add .asus-vivobook img {
+        height: 50vh;
+        transform: translateX(-10vh);
+    }
+
+    .asus-add .asus-zenbook img {
+        height: 50vh;
+    }
+
+    .asus-add .asus-vivobook span {
+        font-size: 5vh;
+        font-family: 'Times New Roman', Times, serif;
+        position: absolute;
+        transform: translateX(-80vh);
+    }
+
+    .asus-add span {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 5vh;
+        position: relative;
+        transform: translateX(-80vh);
+    }
+.slider-container {
+    position: relative;
+    transform: translateX(0.5vh);
+    width: 202vh;
+    height: 610px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 12px;
+    margin-top: -18px;
+    overflow: hidden;
+}
+
+.slider-content {
+    width: 300%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: slide-animation 12s infinite;
+    overflow: hidden;
+}
+
+    .slider-content img {
+        width: 33.33%;
+        height: 100%;
+        float: left;
+        overflow: hidden;
+    }
+
+
+@keyframes slide-animation {
+    0% {
+        left: 0;
+    }
+
+    33.33% {
+        left: -100%;
+    }
+
+    66.66% {
+        left: -200%;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .container img {
+        max-width: 80%;
+    }
+}
+
+.container {
+    overflow: hidden;
+}
+.container img {
+    position: relative;
+    height: 15vh;
+    padding: 10px;
+    transform: translateX(30vh);
+    padding: 10px;
+}
+
+.secure {
+    position: relative;
+    top: 2px;
+}
+
+.gerenty,
+.many {
+    position: relative;
+    bottom: 2px;
+}
+
+.waranty {
+    position: relative;
+    display: inline;
+    right: 10vh;
+}
+
+.return {
+    position: relative;
+    left: 10px;
+    display: inline;
+}
+
+.gerenty {
+    position: relative;
+    left: 38vh;
+}
+
+.secure {
+    position: relative;
+    left: 30vh;
+}
+
+.many {
+    position: relative;
+    left: 22vh;
+}
+
+.shiping {
+    position: relative;
+    left: 12vh;
+}
+
+.container1 img {
+    position: relative;
+    transform: translateX(10px);
+    height: 46vh;
+    display: inline;
+}
+
+@media screen and (max-width: 1000px) {
+    .slider-container {
+        display: none; /* Hide the slider on small screens */
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.offers {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.product {
+    border-radius: 10px 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+    .product:hover {
+        border: 2px solid black;
+        border-radius: 10px 10px;
+        transform: scale(1.05);
+    }
+
+    .product img {
+        max-width: 100%;
+        height: auto;
+    }

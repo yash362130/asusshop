@@ -1,0 +1,13 @@
+﻿.container {
+    background-color: ghostwhite;
+    height: 25vh;
+    width: 48vh;
+    border: 2px solid black;
+    border-radius: 10px 10px;
+    margin: 10px 10px 10px 10px;
+}
+
+.name {
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    font-size: 20px;
+}

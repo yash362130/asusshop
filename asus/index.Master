@@ -1,0 +1,240 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="index.master.cs" Inherits="AsusShop.index" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>Asus Shop</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="image/icon1.png" type="image/x-icon">
+    <link href="css/master.css" rel="stylesheet" />
+    <link href="css/slider.css" rel="stylesheet" />
+    <link href="css/footer.css" rel="stylesheet" />
+    <link href="css/socialmedia.css" rel="stylesheet" />
+    <style>
+     .logout:hover {
+    color: blue;
+}
+
+.logout {
+    position: relative;
+    transform: translateX(10px);
+}
+    </style>
+    
+</head>
+
+
+<body>
+    <form id="form1" runat="server">
+        <%--asus logo--%> 
+        <div class="logo">
+            <img src="image/logo.png" alt="Asus Logo" runat="server" width="50" height="50">
+        </div>
+        <%--asus logo--%>
+         <%--navbar start--%>
+        <div class="navbar">
+            <a href="index.aspx" runat="server">Home</a>
+                    
+            <div class="dropdown">
+                <button class="dropbtn">Laptop</button>
+                <div class="dropdown-content">
+                    <a href="product/leptopiteam/forhome/forhome.aspx" runat="server">For Home</a>
+                    <a href="product/leptopiteam/forwork/forwork.aspx" runat="server">For Work</a>
+                    <a href="product/leptopiteam/forcreaters/forCreaters.aspx" runat="server">For Creaters</a>
+                    <a href="product/leptopiteam/forstudent/forstudent.aspx" runat="server">For Student</a>
+                    <a href="product/leptopiteam/forgaming/forgaming.aspx" runat="server">For Gaming</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Phone</button>
+                <div class="dropdown-content">
+                    <a href="product/phone/rogphone.aspx" runat="server">Rog-Phone</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">MotherBoard</button>
+                <div class="dropdown-content">
+                    <a href="product/motherboardcomponents/motherboard.aspx" runat="server">MotherBoard</a>
+                    <a href="product/motherboardcomponents/cooling.aspx" runat="server">colling</a>
+                    <a href="product/motherboardcomponents/gamingcase.aspx" runat="server">gamingcase</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Display</button>
+                <div class="dropdown-content">
+                    <a href="product/displaymoniter/gamingtowerpc.aspx" runat="server">Gaming-Tower-PC</a>
+                    <a href="product/displaymoniter/allinonepc.aspx" runat="server">All-in-one pc</a>
+                    <a href="product/displaymoniter/minipc.aspx" runat="server">Minipc</a>
+                    <a href="product/displaymoniter/moniter.aspx" runat="server">Moniter</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">Accessories</button>
+                <div class="dropdown-content">
+                    <a href="product/accessories/bags.aspx" runat="server">bags</a>
+                      <a href="product/accessories/headsetaudio.aspx" runat="server">Headset & Auio</a>
+                    <a href="product/accessories/chargersadapters.aspx" runat="server">chargersadapters</a>
+                    <a href="product/accessories/keyboards.aspx" runat="server">keyboards</a>
+                    <a href="product/accessories/mousepad.aspx" runat="server">mousepad</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Networking</button>
+                <div class="dropdown-content">
+                    <a href="product/networkingserver/wholewifisystem.aspx" runat="server">wholewifisystem</a>
+                    <a href="product/networkingserver/wifi6.aspx" runat="server">wifi6</a>
+                    <a href="product/networkingserver/wifirouters.aspx" runat="server">wifirouters</a>
+                    <a href="product/networkingserver/wirelesswireadpeters.aspx" runat="server">wireless&wireadpeters</a>
+
+                </div>
+            </div>
+            <a href="login/login.aspx" id="loginicon" runat="server">login</a>
+            <a href="Register/register.aspx " runat="server" id="register">Register</a>
+            <a href="feedback/feedback.aspx" runat="server">feedback</a>
+            <a href="contact%20us/contect.aspx" runat="server">contect</a>
+            <a href="cart.aspx" runat="server">Cart</a>
+            <a href="gallery.aspx" runat="server">Gallery</a>
+            <a href="aboutus/aboutus.aspx" runat="server">Aboutus</a>
+             <a href="userprofile/userdetail.aspx" runat="server">UserProfile</a>
+         
+            <asp:Button ID="logout" runat="server" CssClass="logout" Visible="false" Text="Logout" OnClick="logout_Click" />
+        </div>
+        <%--navbar end--%>
+   
+        <div class="wrapper">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+        </div>
+        <!-- FOOTER START -->
+        <div class="footer">
+
+            <div class="contain">
+                <div class="col">
+                    <h1>leptop</h1>
+                    <ul>
+                        <a href="product/leptopiteam/forhome/forhome.aspx" runat="server">
+                            <li>For Home</li>
+                        </a>
+                        <a href="product/leptopiteam/forstudent/forstudent.aspx" runat="server">
+                            <li>For Student</li>
+                        </a>
+                        <a href="product/leptopiteam/forwork/forwork.aspx" runat="server">
+                            <li>For Work</li>
+                        </a>
+                        <a href="product/leptopiteam/forcreaters/forcreaters.aspx" runat="server">
+                            <li>For creating</li>
+                        </a>
+                        <a href="product/leptopiteam/forgaming/forgaming.aspx" runat="server">
+                            <li>For Gamming</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h1>Desktop/Display</h1>
+                    <ul>
+                        <a href="product/displaymoniter/gamingtowerpc.aspx" runat="server">
+                            <li>Gaming Tower pc</li>
+                        </a>
+                        <a href="product/displaymoniter/allinonepc.aspx" runat="server">
+                            <li>All-in-one</li>
+                        </a>
+                        <a href="product/displaymoniter/moniter.aspx" runat="server">
+                            <li>Moniter</li>
+                        </a>
+                        <a href="product/displaymoniter/minipc.aspx" runat="server">
+                            <li>Mini-pc</li>
+                        </a>
+
+                    </ul>
+                </div>
+                <div class="col">
+                    <h1>Mobile</h1>
+                    <ul>
+
+                        <a href="product/phone/rogphone.aspx" runat="server">
+                            <li>ROG-Phone</li>
+                        </a>
+
+                    </ul>
+                </div>
+                <div class="col">
+                    <h1>Mother Board</h1>
+                    <ul>
+                        <a href="product/motherboardcomponents/cooling.aspx" runat="server">
+                            <li>cooling</li>
+                        </a>
+                        <a href="product/motherboardcomponents/gamingcase.aspx" runat="server">
+                            <li>gamingcase</li>
+                        </a>
+                        <a href="product/motherboardcomponents/graphiccard.aspx" runat="server">
+                            <li>graphiccard</li>
+                        </a>
+                        <a href="product/motherboardcomponents/motherboard.aspx" runat="server">
+                            <li>MotherBoard
+                            </li>
+                        </a>
+
+                    </ul>
+                </div>
+                <div class="col">
+                    <h1>Networking</h1>
+                    <ul>
+                        <a href="product/networkingserver/wholewifisystem.aspx" runat="server">
+                            <li>Whole-Wifi-System</li>
+                        </a>
+                        <a href="product/networkingserver/wifi6.aspx" runat="server">
+                            <li>WIfi 6</li>
+                        </a>
+                        <a href="product/networkingserver/wifirouters.aspx" runat="server">
+                            <li>Wifi Routers</li>
+                        </a>
+                        <a href="product/networkingserver/wireless&wireadpeters.aspx" runat="server">
+                            <li>WIreless&WireAdapter</li>
+                        </a>
+                        <a href="product/networkingserver/wirenetworking.aspx" runat="server">
+                            <li>WireNetworking</li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h1>Accessories</h1>
+                    <ul>
+                        <a href="product/Accessories/keyboards.aspx" runat="server">
+                            <li>Keyboards</li>
+                        </a>
+                        <a href="product/Accessories/mouse.aspx" runat="server">
+                            <li>Mouse</li>
+                        </a>
+                        <a href="product/Accessories/bags.aspx" runat="server">
+                            <li>Bags</li>
+                        </a>
+                        <a href="product/Accessories/chargeradapters.aspx" runat="server">
+                            <li>Adapters&chargers</li>
+                        </a>
+                        <a href="product/Accessories/headsetaudio.aspx" runat="server">
+                            <li>Headset&audio</li>
+                        </a>
+                    </ul>
+                    <%--socialmedia icon--%>
+                    <div class="sm">
+                        <a href="https://twitter.com/ASUSIndia?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" runat="server" class="fa fa-twiter"></a>
+                        <a href="https://www.facebook.com/ASUSROGInd/?brand_redir=405774002387" runat="server" class="fa fa-facebook"></a>
+                        <a href="https://www.youtube.com/c/ASUS" runat="server" class="fa fa-youtube"></a>
+                        <a href="https://www.youtube.com/c/ASUS" runat="server" class="fa fa-instagram"></a>
+                        <a href="https://www.asus.com/in/" runat="server" class="fa fa-google"></a>
+                        <a href="https://in.linkedin.com/company/asus" runat="server" class="fa fa-linkedin"></a>
+                    </div>
+                    <%--socialmedia icon--%>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <!--  FOOTER END -->
+    </form>
+</body>
+</html>

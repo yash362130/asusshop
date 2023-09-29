@@ -1,0 +1,48 @@
+﻿
+.slider-container {
+    position: relative;
+    transform: translateX(0.5vh);
+    width: 202vh;
+    height: 610px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 12px;
+    margin-top: -18px;
+    overflow: hidden;
+}
+
+.slider-content {
+    width: 300%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: slide-animation 12s infinite;
+    overflow: hidden;
+}
+
+    .slider-content img {
+        width: 33.33%;
+        height: 100%;
+        float: left;
+        overflow: hidden;
+    }
+
+
+@keyframes slide-animation {
+    0% {
+        left: 0;
+    }
+
+    33.33% {
+        left: -100%;
+    }
+
+    66.66% {
+        left: -200%;
+    }
+
+    100% {
+        left: 0;
+    }
+}

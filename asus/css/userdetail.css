@@ -1,0 +1,179 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    overflow: hidden;
+}
+
+    h1::before {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: transparent;
+        transition: color 0.5s ease, transform 0.5s ease;
+        transform: translateY(100%);
+    }
+
+    h1:hover::before {
+        color: #007bff;
+        transform: translateY(0);
+    }
+
+    h1:hover {
+        background-color: #007bff;
+        letter-spacing: 4px;
+    }
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+h1:hover::after {
+    animation: pulse 1s infinite;
+}
+
+
+.container {
+    max-width: 100%;
+    margin: 20px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    border: 5px solid #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+    .profile-image img:hover {
+        transform: scale(1.1);
+    }
+
+.editable-field:enabled {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+
+.editable-field:enabled {
+    font-size: 16px;
+}
+
+
+
+.order-history {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.edit-button,
+.save-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+    .edit-button:hover,
+    .save-button:hover {
+        background-color: #0056b3;
+        transform: translateY(-2px);
+    }
+
+.contact-info {
+    margin-top: 20px;
+}
+
+    .contact-info p {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    .contact-info a {
+        color: #007bff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+        .contact-info a:hover {
+            color: #0056b3;
+        }
+
+@media screen and (max-width: 768px) {
+    .edit-button,
+    .save-button {
+        padding: 8px 16px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .profile {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile-image img {
+        width: 100px;
+        height: 100px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .order-history {
+        padding-top: 10px;
+    }
+
+    h1 {
+        padding: 15px 0;
+        font-size: 24px;
+    }
+
+    .contact-info p {
+        font-size: 16px;
+    }
+}

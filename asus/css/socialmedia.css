@@ -1,0 +1,63 @@
+﻿.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa-facebook {
+    position: relative;
+    top: 30px;
+    color: #3b5998;
+    display: inline;
+}
+
+@media (max-width: 768px) {
+    /* Change the layout to vertical when screen width is 768px or less */
+    .fa {
+        display: block;
+        margin: 10px auto; /* Center the icons vertically */
+    }
+}
+
+.fa-twiter {
+    display: inline;
+    color: #00acee;
+}
+
+.fa-instagram {
+    display: inline;
+    color: red;
+    position: relative;
+    left: 20px;
+}
+
+.fa-youtube {
+    position: relative;
+    right: 10px;
+    display: inline;
+    color: #c4302b;
+}
+
+.fa-google {
+    display: inline;
+    position: relative;
+    left: 20vh;
+    bottom: 28px;
+    color: white;
+}
+
+.fa-linkedin {
+    display: inline;
+    position: relative;
+    left: 17vh;
+    bottom: 28px;
+    color: #0A66C2;
+}
+
+.sm {
+    display: inline;
+    position: relative;
+    right: 65vh;
+}

@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="adminsite.master.cs" Inherits="admin.adminsite" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="home_page.aspx">Asus</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="home_page.aspx" runat="server">Insert Product</a></li>
+                        <li><a href="viewproduct.aspx" runat="server">View Product</a></li>
+                        <li><a href="gallery.aspx" runat="server">GalleryPhoto insert</a></li>
+                        <li><a href="galleryphotoshow.aspx" runat="server">GalleryPhoto Show</a></li>
+                        <li><a href="viewbill.aspx" runat="server">Viewbill</a></li>
+                        <li><a href="Vieworder.aspx" runat="server">View Order</a></li>
+                        <li><a href="viewcontectus.aspx" runat="server">Show contect us</a></li>
+                        <li><a href="showfeedback.aspx" runat="server">ShowFeedback</a></li>
+                        <li><a href="registerduser.aspx" runat="server">Show RegisterUser</a></li>
+                        <li><a href="../index.aspx" runat="server">userside</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
